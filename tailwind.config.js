@@ -1,4 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+/* eslint-disable global-require */
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   theme: {
@@ -10,4 +11,4 @@ module.exports = {
   },
   variants: {},
   plugins: [require('@tailwindcss/ui')],
-}
+};

@@ -12,10 +12,10 @@
 */
 
 /** @jsx jsx */
-import { jsx } from '@emotion/react'
-import tw from '@tailwindcssinjs/macro'
+import { jsx } from '@emotion/react';
+import tw from '@tailwindcssinjs/macro';
 
-//"react native style"
+// "react native style"
 const styles = {
   button: tw`
     relative
@@ -32,10 +32,11 @@ const styles = {
     active:bg-teal-700
     transition duration-150 ease-in-out
   `,
-}
+};
 
 const ButtonReact = ({ className, children, ...props }) => (
   <button
+    type="button"
     {...props}
     css={styles.button}
     className={['group', className].join(' ')}
@@ -56,6 +57,6 @@ const ButtonReact = ({ className, children, ...props }) => (
     </span>
     {children}
   </button>
-)
+);
 
-export default ButtonReact
+export default ButtonReact;
